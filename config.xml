@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.coreg.gelirgider" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Gelir-Gider Takip</name>
+    <description>6 Aylık Gelir – Gider Özeti</description>
+    <author email="coreg@example.com">Feyza</author>
+
+    <content src="index.html" />
+
+    <access origin="*" />
+    <allow-navigation href="https://coreg.rf.gd/*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="Orientation" value="default" />
+    <preference name="AndroidXEnabled" value="true" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#F5F6F1" />
+
+    <icon src="www/icon.png" />
+
+    <platform name="android">
+        <icon density="ldpi" src="www/icon.png" />
+        <icon density="mdpi" src="www/icon.png" />
+        <icon density="hdpi" src="www/icon.png" />
+        <icon density="xhdpi" src="www/icon.png" />
+        <icon density="xxhdpi" src="www/icon.png" />
+        <icon density="xxxhdpi" src="www/icon.png" />
+        <preference name="AndroidLaunchMode" value="singleTop" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+    </platform>
+</widget>
