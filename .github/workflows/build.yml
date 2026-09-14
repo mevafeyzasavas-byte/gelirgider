@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Install Cordova and icon tool
-        run: npm install -g cordova @ionic/cordova-res
+        run: npm install -g cordova cordova-res
 
       - name: Add Android platform
         run: cordova platform add android
