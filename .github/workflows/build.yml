@@ -30,7 +30,7 @@ jobs:
         run: cordova platform add android
 
       - name: Generate icons from source icon
-        run: cordova-res android --skip-config --copy
+        run: cordova-res android --skip-config --copy --type icon --android-project platforms/android
 
       - name: Build debug APK
         run: cordova build android --debug
